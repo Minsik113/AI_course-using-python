@@ -113,7 +113,7 @@ class DuckManager:
 if __name__=="__main__":
     manager = DuckManager()
     manager.createDucks(5,5)
-    print(Duck.count)
+    Duck.objNum()
     manager.displayAllDucks()
     manager.deleteDucks()
     
