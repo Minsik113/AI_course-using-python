@@ -1,0 +1,120 @@
+##########################################
+# 클래스 매서드를 사용해보자.
+# 전체 객체를 몇 개 만들었는가
+##########################################
+import random
+from abc import *
+import turtle
+
+# Parent Class
+class Duck(metaclass=ABCMeta):
+    #static variable
+    SIZE = 30
+    count = 0
+    color_list = ['blue', 'red']
+
+    #instance value
+    def __init__(self):
+        self._x = random.randint(-300, 300)
+        self._y = random.randint(-300, 300)
+        self.turtle = turtle
+        self._color = -1
+        Duck.count += 1
+
+    @abstractmethod
+    def display(self):
+        pass
+
+    def sound(self):
+        # print('quack')
+        self.turtle.penup()
+        self.turtle.goto(self._x - 50, self._y + 50)
+        self.turtle.write("quack")
+        self.turtle.pendown()
+
+    def move(self):
+        # print('move')
+        self.turtle.penup()
+        self.turtle.goto(self._x + 30, self._y + 50)
+        self.turtle.write("move")
+        self.turtle.pendown()
+
+    def screen_reset(self):
+        self.turtle.reset()
+    
+    @classmethod
+    def objNum(cls):
+        print('count = ', Duck.count)
+
+# Child Class1
+class MallardDuck(Duck):
+    def __init__(self):
+        super(MallardDuck, self).__init__()
+        self._color = 0
+
+    #override Method
+    def display(self):
+        self.turtle.color(Duck.color_list[self._color])
+        
+        self.turtle.penup()
+        self.turtle.goto(self._x, self._y)
+        self.turtle.pendown()
+
+        self.turtle.begin_fill()
+        self.turtle.circle(self.SIZE)
+        self.turtle.end_fill()
+
+# Child Class2
+class RedDuck(Duck):
+    
+    def __init__(self):
+        super(RedDuck, self).__init__()
+        self._color = 1
+
+    #override Method
+    def display(self):
+        self.turtle.color(Duck.color_list[self._color])
+        
+        self.turtle.penup()
+        self.turtle.goto(self._x, self._y)
+        self.turtle.pendown()
+
+        self.turtle.begin_fill()
+        self.turtle.circle(self.SIZE)
+        self.turtle.end_fill()    
+
+class DuckManager:
+
+    def __init__(self):
+        self.__duck_list = []
+        self.__nmallard = 0
+        self.__nred = 0
+
+    def createDucks(self, nmallard, nred):
+        self.__nmallard = nmallard
+        self.__nred = nred
+
+        for i in range(self.__nmallard):
+            self.__duck_list.append(MallardDuck())
+        for i in range(self.__nred):
+            self.__duck_list.append(RedDuck())
+    
+    def displayAllDucks(self):
+        for v in self.__duck_list:
+            if v != None:
+                v.display()
+                v.move()
+                v.sound()
+
+    def deleteDucks(self):
+        for v in self.__duck_list:
+            v.screen_reset()
+
+if __name__=="__main__":
+    manager = DuckManager()
+    manager.createDucks(5,5)
+    print(Duck.count)
+    manager.displayAllDucks()
+    manager.deleteDucks()
+    
+

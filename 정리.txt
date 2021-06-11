@@ -25,3 +25,24 @@ def setEng(), def getEng() 로 선언해서 사용했었다. 그런데 이렇게
 private   = __x
 protected = _x
 public    = x
+
+★ 클래스매서드
+생성한 객체의 개수를 세고자 할 때를 예로 듦.
+Person.display()인 이유는 클래스 관점에서 객체를 몇개 생성했는지 체크한것이기 때문이다.
+ex) kai.display()가 아니라 Person.display()이다.
+
+class Person:
+    count = 0
+
+    def __init__(self):
+        self.name = ''
+        Person.count += 1
+    
+    @classmethod
+    def display(cls):
+        print('count=', Person.count)
+
+james = Person()
+kai = Person()
+a = Person()
+Person.display()
