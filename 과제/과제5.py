@@ -13,13 +13,13 @@ class Student() :
     def setMath(self, math) :
         self.__math = math
         
-    def getKor() :
+    def getKor(self) :
         return self.__kor
-    def getEng() :
+    def getEng(self) :
         return self.__eng
-    def getMath() :
+    def getMath(self) :
         return self.__math
-    def getTotal() :
+    def getTotal(self) :
         total = self.__kor + self.__eng + self.__math
         return total
 
