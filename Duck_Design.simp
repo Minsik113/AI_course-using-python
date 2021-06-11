@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simp2b6bb3346d724077b0ec5fb87ed57333">
+  <meta>
+    <name>Duck_Design</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>5</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>180</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>3</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>8</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-d41ff107aba544689c93ab82f588e9dc" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-8354b07e79154bedb916db6629fc8496" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items />
+  <models>
+    <model id="p9c711afe62e243ee80dc33efecbcb255_970475902" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>06/10/2021 12:20:12</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p1a52780f69f446319771618ca8d03d7a_743628765" name="ClassDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="0,76">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/10/2021 12:20:12</creation-date>
+          <change-date>06/10/2021 14:41:28</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="eab0b13ad0f2486b95d4d6196bc6b6d5" cid="C001" type="class" name="Duck" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:13:03">
+            <owned-items>
+              <owned-item ref="066736adb715488ca4c78505d3f6b9d0" />
+              <owned-item ref="f8864bac72cb4c8dafd144e242f77ab7" />
+              <owned-item ref="bac20848da054015bfd61477a779e514" />
+            </owned-items>
+            <attributes>
+              <attribute id="af546379e8d5448749a8ea2cd17a2b83c319" cid="PROP002" name="x" creation-date="06/10/2021 14:14:46" property-ref="066736adb715488ca4c78505d3f6b9d0" />
+              <attribute id="aaf044f5115a64b1ab2981effaeee63a9766" cid="PROP003" name="y" creation-date="06/10/2021 14:14:47" property-ref="f8864bac72cb4c8dafd144e242f77ab7" />
+              <attribute id="aa67365aa51f04cad99a77c4c256d4be0652" cid="PROP004" name="color" creation-date="06/10/2021 14:16:11" property-ref="bac20848da054015bfd61477a779e514" />
+            </attributes>
+            <operations>
+              <operation id="oe937c9a8a3f34274a48566a9fff45ce3925" cid="OP001" name="display" creation-date="06/10/2021 14:14:29" type="" type-id="" visibility="public" />
+              <operation id="o004c7b5e86af451eaa0aeac868a9c704746" cid="OP002" name="move" creation-date="06/10/2021 14:15:48" type="" type-id="" visibility="public" />
+              <operation id="o03c8c14e2d534df28eb537066c42c868135" cid="OP003" name="sound" creation-date="06/10/2021 14:15:51" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="bcddc9c562724692b29b452b1ce8ede8" cid="C002" type="class" name="MallardDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:33:38">
+            <operations>
+              <operation id="o9fee7a4807cb4ec6a997083444cb84e5595" cid="OP006" name="display" creation-date="06/10/2021 14:42:16" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="066736adb715488ca4c78505d3f6b9d0" cid="PROP002" type="property" name="x" style-class="" owner="eab0b13ad0f2486b95d4d6196bc6b6d5" creator="" creation-date="06/10/2021 14:14:46" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property />
+          </item>
+          <item id="f8864bac72cb4c8dafd144e242f77ab7" cid="PROP003" type="property" name="y" style-class="" owner="eab0b13ad0f2486b95d4d6196bc6b6d5" creator="" creation-date="06/10/2021 14:14:47" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property />
+          </item>
+          <item id="bac20848da054015bfd61477a779e514" cid="PROP004" type="property" name="color" style-class="" owner="eab0b13ad0f2486b95d4d6196bc6b6d5" creator="" creation-date="06/10/2021 14:16:11" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property />
+          </item>
+          <item id="d136256fa02a41939a142b200e2a7625" cid="C003" type="class" name="RedDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:33:42">
+            <operations>
+              <operation id="o7e1b7d61a8944dc4b2425af8081aa5cb1" cid="OP007" name="display" creation-date="06/10/2021 14:42:21" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="a9df05a847dd49389d830f54896b74dd" cid="C004" type="class" name="Main" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:37:23" />
+          <item id="133a91b730814ed6b4a66eb74982aa43" cid="C005" type="class" name="DuckManager" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:37:34">
+            <owned-items>
+              <owned-item ref="ede5a995a31449539b8f9393be461a9e" />
+              <owned-item ref="bde4f128f39442f697ffd0f5c20f26dd" />
+            </owned-items>
+            <attributes>
+              <attribute id="a8db67827bdba43038c774fb1679bfc5a654" cid="PROP006" name="list" creation-date="06/10/2021 14:41:51" property-ref="bde4f128f39442f697ffd0f5c20f26dd" />
+            </attributes>
+            <operations>
+              <operation id="o450c6f46b07d4c5fa1f5d33f91ab7026301" cid="OP005" name="displayAllDucks" creation-date="06/10/2021 14:41:58" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="ee57ed74c5f44218a5295ddb74af1236" cid="GNR001" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:40:18" from="bcddc9c562724692b29b452b1ce8ede8" visibility="package" />
+          <item id="91f8ceb2646c4ef9b925732785d8398f" cid="GNR002" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:40:38" from="bcddc9c562724692b29b452b1ce8ede8" to="eab0b13ad0f2486b95d4d6196bc6b6d5" visibility="package" />
+          <item id="185d9dd2480d4e1d947df5180af3c193" cid="GNR003" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:40:44" from="d136256fa02a41939a142b200e2a7625" to="eab0b13ad0f2486b95d4d6196bc6b6d5" visibility="package" />
+          <item id="7d90267825c34617b1337ff300cf2030" cid="REL001" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:41:15" from="133a91b730814ed6b4a66eb74982aa43" to="eab0b13ad0f2486b95d4d6196bc6b6d5" visibility="package">
+            <relation from="133a91b730814ed6b4a66eb74982aa43" to="eab0b13ad0f2486b95d4d6196bc6b6d5" derived="false">
+              <start-role id="umlar-2f75b4cb-54c5-4765-9008-9ffee9b7434b" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-513f454a-9ba8-4e94-a201-952861ee5171" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="00e4ae5dd3f247ceb6510ebf14c015c9" cid="REL002" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/10/2021 14:41:28" from="a9df05a847dd49389d830f54896b74dd" to="133a91b730814ed6b4a66eb74982aa43" visibility="package">
+            <relation from="a9df05a847dd49389d830f54896b74dd" to="133a91b730814ed6b4a66eb74982aa43" derived="false">
+              <start-role id="umlar-e3a2ce92-ac2b-4e50-89ec-3bcfed8a2d5c" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-c0a6b020-88e0-4afb-bec1-8e4b62e5c5c2" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="bde4f128f39442f697ffd0f5c20f26dd" cid="PROP006" type="property" name="list" style-class="" owner="133a91b730814ed6b4a66eb74982aa43" creator="" creation-date="06/10/2021 14:41:51" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property default-value="[] : Duck" />
+          </item>
+        </abstract-items>
+        <layer id="70c6dcd0eba64a8a810a24ed830239e7" name="Default" visible="true" enabled="true" locked="false">
+          <item id="eab0b13ad0f2486b95d4d6196bc6b6d5" iid="29a7879a1f3e4a708a2ce4e2c74f44e3" creation-date="06/10/2021 14:13:03" order-index="0" type="entity">
+            <layout ax="546" ay="135" awidth="157" aheight="206" x="546" y="135" width="157" height="206" rotation-center="0,-30.5" />
+            <class />
+          </item>
+          <item id="bcddc9c562724692b29b452b1ce8ede8" iid="207c986414044fa088789530a91235d0" creation-date="06/10/2021 14:33:38" order-index="1" type="entity">
+            <layout ax="419" ay="432.75" awidth="157" aheight="99.5" x="473" y="393.75" width="157" height="99.5" rotation-center="27,-20.25" />
+            <class />
+          </item>
+          <item id="d136256fa02a41939a142b200e2a7625" iid="90770f57b7fc430e9764e2a8cd99c9cc" creation-date="06/10/2021 14:33:42" order-index="2" type="entity">
+            <layout ax="674" ay="432.75" awidth="157" aheight="99.5" x="674" y="432.75" width="157" height="99.5" rotation-center="-27,-23.25" />
+            <class />
+          </item>
+          <item id="a9df05a847dd49389d830f54896b74dd" iid="9d81ebd840654d6787498a1a6e81ef94" creation-date="06/10/2021 14:37:23" order-index="3" type="entity">
+            <layout ax="29.5" ay="155.25" awidth="139" aheight="130.5" x="29.5" y="155.25" width="139" height="130.5" rotation-center="0,-32.25" />
+            <class />
+          </item>
+          <item id="133a91b730814ed6b4a66eb74982aa43" iid="0ed62972e9104b10aa5cf27968e4aece" creation-date="06/10/2021 14:37:34" order-index="4" type="entity">
+            <layout ax="253" ay="157" awidth="139" aheight="127" x="253" y="157" width="139" height="127" rotation-center="0,-32.5" />
+            <class />
+          </item>
+          <item id="91f8ceb2646c4ef9b925732785d8398f" iid="a84b709d77f54741a50dfaec637b6f3d" creation-date="06/10/2021 14:40:38" order-index="5" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="495" y1="433" x2="624" y2="341" start-border-pos="0.121019108280255" end-border-pos="0.625796178343949" start-local-pos="76" end-local-pos="78" name-position="0,20">
+              <points>
+                <point x="495" y="433" />
+                <point x="624" y="341" />
+              </points>
+            </layout>
+            <relation from="bcddc9c562724692b29b452b1ce8ede8" from-iid="207c986414044fa088789530a91235d0" to="eab0b13ad0f2486b95d4d6196bc6b6d5" to-iid="29a7879a1f3e4a708a2ce4e2c74f44e3" />
+          </item>
+          <item id="185d9dd2480d4e1d947df5180af3c193" iid="4eea0b9430c247bfb53812a9bff3af07" creation-date="06/10/2021 14:40:44" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="758" y1="433" x2="624" y2="341" start-border-pos="0.133757961783439" end-border-pos="0.625796178343949" start-local-pos="84" end-local-pos="78" name-position="0,20">
+              <points>
+                <point x="758" y="433" />
+                <point x="624" y="341" />
+              </points>
+            </layout>
+            <relation from="d136256fa02a41939a142b200e2a7625" from-iid="90770f57b7fc430e9764e2a8cd99c9cc" to="eab0b13ad0f2486b95d4d6196bc6b6d5" to-iid="29a7879a1f3e4a708a2ce4e2c74f44e3" />
+          </item>
+          <item id="7d90267825c34617b1337ff300cf2030" iid="385bd33e9c734169a84cca2c84764a53" creation-date="06/10/2021 14:41:15" order-index="7" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="392" y1="220" x2="546" y2="224" start-border-pos="0.374015748500824" end-border-pos="0.892293691635132" start-local-pos="63" end-local-pos="89" name-position="0,20">
+              <points>
+                <point x="392" y="220" />
+                <point x="546" y="224" />
+              </points>
+            </layout>
+            <relation from="133a91b730814ed6b4a66eb74982aa43" from-iid="0ed62972e9104b10aa5cf27968e4aece" to="eab0b13ad0f2486b95d4d6196bc6b6d5" to-iid="29a7879a1f3e4a708a2ce4e2c74f44e3" to-field="oe937c9a8a3f34274a48566a9fff45ce3925" />
+          </item>
+          <item id="00e4ae5dd3f247ceb6510ebf14c015c9" iid="1d2bd937335d4b398a57b821a2fdb3a3" creation-date="06/10/2021 14:41:28" order-index="8" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="168" y1="221" x2="253" y2="220" start-border-pos="0.375490196078431" end-border-pos="0.875984251968504" start-local-pos="64" end-local-pos="63" name-position="0,20">
+              <points>
+                <point x="168" y="221" />
+                <point x="253" y="220" />
+              </points>
+            </layout>
+            <relation from="a9df05a847dd49389d830f54896b74dd" from-iid="9d81ebd840654d6787498a1a6e81ef94" to="133a91b730814ed6b4a66eb74982aa43" to-iid="0ed62972e9104b10aa5cf27968e4aece" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
