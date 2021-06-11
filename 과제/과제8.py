@@ -15,34 +15,23 @@ class Duck(metaclass=ABCMeta):
         self.turtle = turtle
         self._color = -1
 
-    # @abstractmethod
+    @abstractmethod
     def display(self):
-        self.turtle.penup()
-        self.turtle.goto(self._x, self._y)
-        self.turtle.pendown()
-        
-        self.turtle.color(Duck.color_list[self._color])
-        self.turtle.begin_fill()
-        self.turtle.circle(self.SIZE)
-        self.turtle.end_fill()
-        
-        self.turtle.penup()
-        self.turtle.pendown()
-        self.turtle.write("move\t\tquack")  #print text
+        pass
 
     def sound(self):
-        print('quack')
+        # print('quack')
         self.turtle.penup()
         self.turtle.goto(self._x - 50, self._y + 50)
-        self.turtle.pendown()
         self.turtle.write("quack")
+        self.turtle.pendown()
 
     def move(self):
-        print('move')
+        # print('move')
         self.turtle.penup()
         self.turtle.goto(self._x + 30, self._y + 50)
-        self.turtle.pendown()
         self.turtle.write("move")
+        self.turtle.pendown()
 
     def screen_reset(self):
         self.turtle.reset()
@@ -109,9 +98,9 @@ class DuckManager:
 
     def deleteDucks(self):
         for v in self.__duck_list:
-            v.screen_resert()
+            v.screen_reset()
 
-if '__main__':
+if __name__=="__main__":
     manager = DuckManager()
     manager.createDucks(5,5)
     manager.displayAllDucks()
