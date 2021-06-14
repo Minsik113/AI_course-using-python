@@ -1,100 +1,76 @@
 import random
-from abc import *
+from abc import ABCMeta
+from abc import abstractmethod
 import turtle
 
-#Parent Class
-class Duck:
-
-    #static variable
-    SIZE = 30
-    color_list = ['blue','red']
-
-    #instance value
+#Parent
+class Duck(metaclass=ABCMeta):
+    
+    SIZE = 20
+    color_list = ['blue', 'red', 'orange', 'green']
+    
     def __init__(self):
-        self._x = random.randint(-300,300)
-        self._y = random.randint(-300,300)
-        self._turtle = turtle
-        self._color = 0 #mallard=0, red=1
+        self._x = random.randint(-300, 300)
+        self._y = random.randint(-300, 300)
+        self._color = -1
+        self.turtle = turtle
     
     @abstractmethod
     def display(self):
         pass
 
-    def move(self):
-        self._turtle.penup()
-        self._turtle.goto(self._x - 50, self._y + 50)
-        self._turtle.write('move')
-        self._turtle.pendown()
+    @abstractmethod
+    def swim(self):
+        pass
 
-    def sound(self):
-        self._turtle.penup()
-        self._turtle.goto(self._x + 50, self._y + 50)
-        self._turtle.write('quack')
-        self._turtle.pendown()
-
-    def screen_reset(self):
-        self._turtle.reset()
-
-#Child Class
+#Child1
 class MallardDuck(Duck):
     
     def __init__(self):
-        super(MallardDuck, self).__init__() # python2.x
+        super(MallardDuck, self).__init__()
         self._color = 0
-
-    def display(self):
-        self._turtle.color(Duck.color_list[self._color])
-
-        self._turtle.penup()
-        self._turtle.goto(self._x, self._y)
-        self._turtle.pendown()
-
-        self._turtle.begin_fill()
-        self._turtle.circle(self.SIZE)
-        self._turtle.end_fill()
-
-#Child Class
-class RedDuck(Duck):
     
-    def __init__(self):
-        super(RedDuck, self).__init__()
-        self._color = 1
+    def quack(self):
+        self.turtle.penup()
+        self.turtle.goto(self._x + 30, self._y + 30)
+        self.turtle.write("꽥꽥")
+        self.turtle.pendown()
 
+    def fly(self):
+        self.turtle.penup()
+        self.turtle.goto(self._x - 50, self._y - 20)
+        self.turtle.write("날다")
+        self.turtle.pendown()
+        
+    #--abstract method--
     def display(self):
-        self._turtle.color(Duck.color_list[self._color])
-
-        self._turtle.penup()
-        self._turtle.goto(self._x, self._y)
-        self._turtle.pendown()
-
-        self._turtle.begin_fill()
-        self._turtle.circle(self.SIZE)
-        self._turtle.end_fill()
-
-#DuckManager Class
-class DuckManager:
-    def __init__(self):
-        self.__duck_list = []
+        print("BLUE")
+        self.turtle.color(Duck.color_list[self._color])
+        
+        self.turtle.penup()
+        self.turtle.goto(self._x, self._y)
+        self.turtle.pendown()
+        
+        self.turtle.begin_fill()
+        self.turtle.circle(self.SIZE)
+        self.turtle.end_fill()
     
-    def createDucks(self, nmallard, nred):
-        for i in range(nmallard):
-            self.__duck_list.append(MallardDuck())
-        for i in range(nred):
-            self.__duck_list.append(RedDuck())
+    def swim(self):
+        self.turtle.penup()
+        self.turtle.goto(self._x - 50, self._y + 30)
+        self.turtle.write("수영")
+        self.turtle.pendown()
 
-    def displayAllDucks(self):
-        for v in self.__duck_list:
-            if v != None:
-                v.display()
-                v.move()
-                v.sound()
+for i in range(2):
+    ml = MallardDuck()
+    if ml != None:
+        ml.display()
+        ml.swim()
+        ml.quack()
+        ml.fly()
 
-    def deleteDucks(self):
-        for v in self.__duck_list:
-            v.screen_reset()
-
-if __name__ == "__main__":
-    dmanager = DuckManager()
-    dmanager.createDucks(5,5)
-    dmanager.displayAllDucks()
-    dmanager.deleteDucks()
+# ml = MallardDuck()
+# ml.display()
+# ml.swim()
+# ml.quack()
+# ml.fly()
