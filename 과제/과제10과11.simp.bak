@@ -15,7 +15,7 @@
     <entity-ids>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>657</value>
+        <value>696</value>
       </counter>
       <counter>
         <item-type type-id="class" type="Class" />
@@ -47,12 +47,13 @@
     <fields>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>21</value>
+        <value>26</value>
       </counter>
     </fields>
   </counters>
   <alias-groups />
   <management uid="md-f2f8ab6dc1d149e6a553e93973d26c77" name="" task-id-sequence="0">
+    <working-schedule uid="ws-a7548dfd956d46ebbe815dd563e82dfe" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
       <person id="">
         <first-name />
@@ -62,6 +63,7 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-d46be6d860504aceb1831c0c9e084a42" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -122,38 +124,32 @@
             <structural-feature type="" type-id="" />
             <property />
           </item>
-          <item id="037bc414aa1c42d7951240e7212d69b2" cid="C001" type="class" name="Duck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:30:37">
+          <item id="037bc414aa1c42d7951240e7212d69b2" cid="C001" type="class" name="Duck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:30:37" visibility="undefined">
             <owned-items>
               <owned-item ref="1075023161604bd398648d7de7969d06" />
               <owned-item ref="83362308609b47798cbfa8b1b4b1c5c6" />
               <owned-item ref="b9e78e6adc984a059a0e8ff873ddf45a" />
               <owned-item ref="daf69e82734248c6959a7a7e96aef835" />
-              <owned-item ref="077a93fac3a24a82b0a00491111c5fc4" />
-              <owned-item ref="9de6447cbda14fa2983ac8c2fae6aa7f" />
+              <owned-item ref="83362308609b47798cbfa8b1b4b1c5c6" />
+              <owned-item ref="1075023161604bd398648d7de7969d06" />
             </owned-items>
             <attributes>
               <attribute id="ae2942a197a2741ef99a1ee46c7e0728d85" cid="PROP001" name="x" creation-date="06/14/2021 12:30:53" property-ref="1075023161604bd398648d7de7969d06" />
               <attribute id="ac79a52f6b14c4dd2a546d95037c015db931" cid="PROP002" name="y" creation-date="06/14/2021 12:30:58" property-ref="83362308609b47798cbfa8b1b4b1c5c6" />
               <attribute id="ae6f3a52f54e944b1afc299fdeea78c6b835" cid="PROP005" name="SIZE" creation-date="06/14/2021 14:51:04" property-ref="b9e78e6adc984a059a0e8ff873ddf45a" />
               <attribute id="aecbed26fcc974454b19d59f5cbbae8cf519" cid="PROP006" name="color_list" creation-date="06/14/2021 14:51:21" property-ref="daf69e82734248c6959a7a7e96aef835" />
-              <attribute id="aecc3e28a63534f9cafcbf25df92c130b219" cid="PROP016" name="flycheck" creation-date="06/14/2021 15:54:43" property-ref="077a93fac3a24a82b0a00491111c5fc4" />
-              <attribute id="a5aff90d8b4e74c95b312b6dd3b11fe8c679" cid="PROP017" name="quackcheck" creation-date="06/14/2021 15:54:50" property-ref="9de6447cbda14fa2983ac8c2fae6aa7f" />
             </attributes>
             <operations>
               <operation id="o7277a4efbe674c8c812207d7177f9f5b72" cid="OP001" name="display" creation-date="06/14/2021 12:31:06" type="abstract" type-id="abstract" visibility="public" />
               <operation id="o4628c5ea9967469bab8c33571d13a8f8933" cid="OP002" name="swim" creation-date="06/14/2021 12:31:16" type="" type-id="" visibility="public" />
             </operations>
           </item>
-          <item id="d9314bb91d1b48299e71e1cad8642867" cid="C002" type="class" name="MallardDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:27">
+          <item id="d9314bb91d1b48299e71e1cad8642867" cid="C002" type="class" name="MallardDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:27" visibility="undefined">
             <owned-items>
               <owned-item ref="c44d4c33dd574f568ecb4b26695d4717" />
-              <owned-item ref="2c9ef29866ce49e0b12174728a56fec5" />
-              <owned-item ref="d04096127d7f46f0a52a38dcb7f73487" />
             </owned-items>
             <attributes>
               <attribute id="a17ce7699d7614519853ed40d4001f7f7148" cid="PROP007" name="color" creation-date="06/14/2021 15:05:25" property-ref="c44d4c33dd574f568ecb4b26695d4717" />
-              <attribute id="af6339a03684d438f9599f7c5dc4a4ebb536" cid="PROP008" name="flycheck" creation-date="06/14/2021 15:05:33" property-ref="2c9ef29866ce49e0b12174728a56fec5" />
-              <attribute id="a2ef243de1c2f4213af2b52839ff1d0ce796" cid="PROP009" name="quackcheck" creation-date="06/14/2021 15:05:39" property-ref="d04096127d7f46f0a52a38dcb7f73487" />
             </attributes>
             <operations>
               <operation id="o8ccffdaced2a4df7bd363607293a11b8279" cid="OP005" name="display" creation-date="06/14/2021 12:35:11" type="" type-id="" visibility="public" />
@@ -161,16 +157,12 @@
               <operation id="ode8591d2b1c34efb96a2a235c5225086915" cid="OP014" name="fly" creation-date="06/14/2021 15:03:22" type="" type-id="" visibility="public" />
             </operations>
           </item>
-          <item id="6bc37aed2d294a4e81ca4d6e35d14ef2" cid="C003" type="class" name="RedDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:30">
+          <item id="6bc37aed2d294a4e81ca4d6e35d14ef2" cid="C003" type="class" name="RedDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:30" visibility="undefined">
             <owned-items>
               <owned-item ref="5745fe0d61674e7b901ad42ccc214a04" />
-              <owned-item ref="31ef6c2c9f52488589d8d8ce49e6d842" />
-              <owned-item ref="c4a5a4f73d5b4f2f9b6aa32bdff59bbf" />
             </owned-items>
             <attributes>
               <attribute id="aea9d4220345147c78a0fe7a25944e8b9265" cid="PROP010" name="color" creation-date="06/14/2021 15:05:57" property-ref="5745fe0d61674e7b901ad42ccc214a04" />
-              <attribute id="a9e81c89eec3c485c9839eb98a134ea15851" cid="PROP011" name="flycheck" creation-date="06/14/2021 15:05:59" property-ref="31ef6c2c9f52488589d8d8ce49e6d842" />
-              <attribute id="aba7afa68f3cb497ea331e986c051152a805" cid="PROP012" name="quackcheck" creation-date="06/14/2021 15:06:01" property-ref="c4a5a4f73d5b4f2f9b6aa32bdff59bbf" />
             </attributes>
             <operations>
               <operation id="off98a3e3f1884fed8fbc2bf3998dac48531" cid="OP006" name="display" creation-date="06/14/2021 12:35:16" type="" type-id="" visibility="public" />
@@ -178,21 +170,19 @@
               <operation id="o1cda313f34c0420bba7e0fe45986fbf5383" cid="OP015" name="fly" creation-date="06/14/2021 15:03:37" type="" type-id="" visibility="public" />
             </operations>
           </item>
-          <item id="1c06b5f238af4eedbbe8f6c8e409f6e4" cid="C004" type="class" name="RubberDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:40">
+          <item id="1c06b5f238af4eedbbe8f6c8e409f6e4" cid="C004" type="class" name="RubberDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:40" visibility="undefined">
             <owned-items>
               <owned-item ref="6c15424910324850b45e47acbeccbad6" />
-              <owned-item ref="4d4fdc5dd73940d5a8a1a5f96e0c3f52" />
             </owned-items>
             <attributes>
               <attribute id="afdd47aa4ec85497590ea84f3285ffc61806" cid="PROP013" name="color" creation-date="06/14/2021 15:06:08" property-ref="6c15424910324850b45e47acbeccbad6" />
-              <attribute id="a05060a89a9a743e2ae024e6ce3726d57842" cid="PROP014" name="quackcheck" creation-date="06/14/2021 15:06:10" property-ref="4d4fdc5dd73940d5a8a1a5f96e0c3f52" />
             </attributes>
             <operations>
               <operation id="oc3e3e41f04ad47bb879cfbaefd204e11604" cid="OP010" name="display" creation-date="06/14/2021 12:35:52" type="" type-id="" visibility="public" />
               <operation id="o0f075cdb0ff74767ae83cc919b50a47a328" cid="OP016" name="quack" creation-date="06/14/2021 15:05:06" type="" type-id="" visibility="public" />
             </operations>
           </item>
-          <item id="bd3d3b0ce8bf46e69fbf0045e6e5d045" cid="C005" type="class" name="DecoyDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:46">
+          <item id="bd3d3b0ce8bf46e69fbf0045e6e5d045" cid="C005" type="class" name="DecoyDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:32:46" visibility="undefined">
             <owned-items>
               <owned-item ref="9b90084898024a04ace145ca963fead3" />
             </owned-items>
@@ -207,7 +197,7 @@
           <item id="29a584679ca24d368c245fb703c257cf" cid="GNR015" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:33:24" from="d9314bb91d1b48299e71e1cad8642867" to="d45e4b80de8a4923bddd03435b32ee0b" visibility="package" />
           <item id="ca57064f6dd74552934fa058d032db2c" cid="GNR018" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:33:42" from="6bc37aed2d294a4e81ca4d6e35d14ef2" to="d45e4b80de8a4923bddd03435b32ee0b" visibility="package" />
           <item id="36d8c70b9602419e982bfdd3d0823f0b" cid="GNR021" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:34:03" from="1c06b5f238af4eedbbe8f6c8e409f6e4" to="037bc414aa1c42d7951240e7212d69b2" visibility="package" />
-          <item id="cc812bbd9cd04015813d33b30ce45339" cid="C006" type="class" name="DuckManager" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:37:40">
+          <item id="cc812bbd9cd04015813d33b30ce45339" cid="C006" type="class" name="DuckManager" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 12:37:40" visibility="undefined">
             <owned-items>
               <owned-item ref="952ae68826a94de6b87d9e18d85967f5" />
             </owned-items>
@@ -215,14 +205,18 @@
               <attribute id="a823d4d0d475a4984b452698a8a573c3754" cid="PROP003" name="duck_list" creation-date="06/14/2021 14:04:36" property-ref="952ae68826a94de6b87d9e18d85967f5" />
             </attributes>
             <operations>
-              <operation id="of3fe901b6ea64fa797df03e7b8a3aeac831" cid="OP011" name="displayAllDucks" creation-date="06/14/2021 14:04:43" type="" type-id="" visibility="public" />
               <operation id="o9dbb5e1093b74d8ca891999fa86c64a0849" cid="OP012" name="createDucks" creation-date="06/14/2021 14:04:55" type="" type-id="" visibility="public" />
+              <operation id="o2c1eb95f2fc344918b74dffb67d520db555" cid="OP021" name="displayAllDucks" creation-date="06/15/2021 10:28:58" type="" type-id="" visibility="public" />
+              <operation id="o22db56d7bfd142d9ba91b486ff7a40db295" cid="OP022" name="swimAllDucks" creation-date="06/15/2021 10:29:08" type="" type-id="" visibility="public" />
+              <operation id="ocd5df61ed3ad4e68b8e87db84f3e1a1f103" cid="OP023" name="quackAllDucks" creation-date="06/15/2021 10:29:16" type="" type-id="" visibility="public" />
+              <operation id="o101970a3c4d642d792a6cf55267491c0399" cid="OP024" name="flyAllDucks" creation-date="06/15/2021 11:02:34" type="" type-id="" visibility="public" />
+              <operation id="o01efd847b8fc4de2858e669f58382974361" cid="OP025" name="allAttributeDucks" creation-date="06/15/2021 11:07:42" type="" type-id="" visibility="public" />
             </operations>
           </item>
           <item id="b73c303c2e3e446187691ef94a069c63" cid="REL004" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:40:11" from="cc812bbd9cd04015813d33b30ce45339" to="037bc414aa1c42d7951240e7212d69b2" visibility="package">
             <relation from="cc812bbd9cd04015813d33b30ce45339" to="037bc414aa1c42d7951240e7212d69b2" derived="false">
-              <start-role id="umlar-958f5c08-fa0c-468e-b0ce-54e8aad53ba6" name="" navigability="" association-type="composition" visibility="private" />
-              <end-role id="umlar-9b5e57e6-2cd9-4f5a-b2ec-034a9c581bf9" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-f72ff33e-1b36-4f95-8981-ca67be88d41e" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-d3abef88-70ed-4122-8a4f-0d107edb240b" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="952ae68826a94de6b87d9e18d85967f5" cid="PROP003" type="property" name="duck_list" style-class="" owner="cc812bbd9cd04015813d33b30ce45339" creator="" creation-date="06/14/2021 14:04:36" visibility="private">
@@ -230,7 +224,7 @@
             <structural-feature type="" type-id="" />
             <property default-value="[] : Duck" />
           </item>
-          <item id="d45e4b80de8a4923bddd03435b32ee0b" cid="C007" type="class" name="Quack" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:17:30">
+          <item id="d45e4b80de8a4923bddd03435b32ee0b" cid="C007" type="class" name="Quack" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:17:30" visibility="undefined">
             <operations>
               <operation id="oebb3bd70b60e4736b7eef737d644c199861" cid="OP018" name="quack" creation-date="06/14/2021 15:19:26" type="abstract" type-id="abstract" visibility="public" />
             </operations>
@@ -250,27 +244,7 @@
             <structural-feature type="" type-id="" />
             <property />
           </item>
-          <item id="2c9ef29866ce49e0b12174728a56fec5" cid="PROP008" type="property" name="flycheck" style-class="" owner="d9314bb91d1b48299e71e1cad8642867" creator="" creation-date="06/14/2021 15:05:33" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="d04096127d7f46f0a52a38dcb7f73487" cid="PROP009" type="property" name="quackcheck" style-class="" owner="d9314bb91d1b48299e71e1cad8642867" creator="" creation-date="06/14/2021 15:05:39" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
           <item id="5745fe0d61674e7b901ad42ccc214a04" cid="PROP010" type="property" name="color" style-class="" owner="6bc37aed2d294a4e81ca4d6e35d14ef2" creator="" creation-date="06/14/2021 15:05:57" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="31ef6c2c9f52488589d8d8ce49e6d842" cid="PROP011" type="property" name="flycheck" style-class="" owner="6bc37aed2d294a4e81ca4d6e35d14ef2" creator="" creation-date="06/14/2021 15:05:59" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="c4a5a4f73d5b4f2f9b6aa32bdff59bbf" cid="PROP012" type="property" name="quackcheck" style-class="" owner="6bc37aed2d294a4e81ca4d6e35d14ef2" creator="" creation-date="06/14/2021 15:06:01" visibility="private">
             <feature />
             <structural-feature type="" type-id="" />
             <property />
@@ -280,37 +254,22 @@
             <structural-feature type="" type-id="" />
             <property />
           </item>
-          <item id="4d4fdc5dd73940d5a8a1a5f96e0c3f52" cid="PROP014" type="property" name="quackcheck" style-class="" owner="1c06b5f238af4eedbbe8f6c8e409f6e4" creator="" creation-date="06/14/2021 15:06:10" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
           <item id="9b90084898024a04ace145ca963fead3" cid="PROP015" type="property" name="color" style-class="" owner="bd3d3b0ce8bf46e69fbf0045e6e5d045" creator="" creation-date="06/14/2021 15:06:18" visibility="private">
             <feature />
             <structural-feature type="" type-id="" />
             <property />
           </item>
-          <item id="120b543a8b3f441fb6a7a7ef13956ebc" cid="C008" type="class" name="Fly" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:17:50">
+          <item id="120b543a8b3f441fb6a7a7ef13956ebc" cid="C008" type="class" name="Fly" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:17:50" visibility="undefined">
             <operations>
               <operation id="o7d270e62ba8541bfa883478506e96509476" cid="OP020" name="fly" creation-date="06/14/2021 15:25:02" type="abstract" type-id="abstract" visibility="public" />
             </operations>
           </item>
-          <item id="8d2984b92c1345a6b0a4ef5eeed92741" cid="C009" type="class" name="NoDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:18:02" />
+          <item id="8d2984b92c1345a6b0a4ef5eeed92741" cid="C009" type="class" name="NoDuck" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:18:02" visibility="undefined" />
           <item id="380457311af041748966aa7c6e16b245" cid="GNR020" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:33:53" from="6bc37aed2d294a4e81ca4d6e35d14ef2" to="120b543a8b3f441fb6a7a7ef13956ebc" visibility="package" />
           <item id="d334698c2ab14358bd2b2496b8337c1a" cid="GNR019" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:33:49" from="6bc37aed2d294a4e81ca4d6e35d14ef2" to="037bc414aa1c42d7951240e7212d69b2" visibility="package" />
           <item id="644235adc5644356baddf28ee76f8839" cid="GNR017" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:33:36" from="d9314bb91d1b48299e71e1cad8642867" to="120b543a8b3f441fb6a7a7ef13956ebc" visibility="package" />
           <item id="a6f6bd3d706f4524b048940072bbd8bf" cid="GNR022" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:34:11" from="1c06b5f238af4eedbbe8f6c8e409f6e4" to="d45e4b80de8a4923bddd03435b32ee0b" visibility="package" />
           <item id="de5c28e45d664c948f1925c49ac3cb1f" cid="GNR023" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="06/14/2021 15:34:26" from="bd3d3b0ce8bf46e69fbf0045e6e5d045" to="037bc414aa1c42d7951240e7212d69b2" visibility="package" />
-          <item id="077a93fac3a24a82b0a00491111c5fc4" cid="PROP016" type="property" name="flycheck" style-class="" owner="037bc414aa1c42d7951240e7212d69b2" creator="" creation-date="06/14/2021 15:54:43" visibility="private">
-            <feature />
-            <structural-feature type="Boolean" type-id="Uml.Boolean" />
-            <property />
-          </item>
-          <item id="9de6447cbda14fa2983ac8c2fae6aa7f" cid="PROP017" type="property" name="quackcheck" style-class="" owner="037bc414aa1c42d7951240e7212d69b2" creator="" creation-date="06/14/2021 15:54:50" visibility="private">
-            <feature />
-            <structural-feature type="Boolean" type-id="Uml.Boolean" />
-            <property />
-          </item>
         </abstract-items>
         <layer id="d301fb08e69c4075b3ea666eda495250" name="Default" visible="true" enabled="true" locked="false">
           <item id="037bc414aa1c42d7951240e7212d69b2" iid="0552e636d58645dba893fe5e1f890cce" creation-date="06/14/2021 12:30:37" order-index="0" type="entity">
