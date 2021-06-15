@@ -63,14 +63,14 @@ class MallardDuck(Duck, Quack, Fly):
     def quack(self):
         self.turtle.penup()
         self.turtle.goto(self._x + 30, self._y + 30)
-        self.turtle.write("꽥꽥")
         self.turtle.pendown()
+        self.turtle.write("꽥꽥")
 
     def fly(self):
         self.turtle.penup()
         self.turtle.goto(self._x - 50, self._y - 20)
-        self.turtle.write("날다")
         self.turtle.pendown()
+        self.turtle.write("날다")
 
 # Child2 Class - RedDuck
 #Child2
@@ -98,14 +98,14 @@ class RedDuck(Duck, Quack, Fly):
     def quack(self):
         self.turtle.penup()
         self.turtle.goto(self._x + 30, self._y + 30)
-        self.turtle.write("꽥꽥")
         self.turtle.pendown()
+        self.turtle.write("꽥꽥")
 
     def fly(self):
         self.turtle.penup()
         self.turtle.goto(self._x - 50, self._y - 20)
-        self.turtle.write("날다")
         self.turtle.pendown()
+        self.turtle.write("날다")
 
 # Child3 Class - RubberDuck
 class RubberDuck(Duck, Quack):
@@ -131,8 +131,8 @@ class RubberDuck(Duck, Quack):
     def quack(self):
         self.turtle.penup()
         self.turtle.goto(self._x + 30, self._y + 30)
-        self.turtle.write("삑삑")
         self.turtle.pendown()
+        self.turtle.write("삑삑")
 
 # Child4 Class - Decoy Duck
 #Child4
@@ -178,9 +178,9 @@ class DuckManager:
             if duck != None:
                 duck.display()
                 duck.swim()
-                if duck._quackcheck:
+                if isinstance(duck, Quack):
                     duck.quack()
-                if duck._flycheck:
+                if isinstance(duck, Fly):
                     duck.fly()
 
 if __name__ == "__main__":
