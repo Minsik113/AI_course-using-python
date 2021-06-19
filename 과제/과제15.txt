@@ -1,0 +1,21 @@
+SELECT name, count(*) AS 출판사수 
+FROM Customer, Book, Orders
+WHERE Customer.custid=Orders.custid AND Orders.bookid=Book.bookid 
+GROUP BY name Having name='박지성';
+
+SELECT name, bookname, price, price-saleprice AS 금액차 
+FROM Customer, Book, Orders 
+WHERE Customer.custid=Orders.custid AND Orders.bookid=Book.bookid AND Customer.name='박지성';
+
+SELECT SUM(saleprice) AS 주문금액의총액, AVG(saleprice) AS 주문의평균금액 
+FROM Orders;
+
+SELECT Customer.name, SUM(Orders.saleprice) AS 구매액 
+FROM Customer, Orders 
+WHERE Customer.custid=Orders.custid 
+GROUP BY Customer.name;
+
+SELECT Customer.name, Book.bookname 
+FROM Customer, Book, Orders 
+WHERE Customer.custid=Orders.custid AND Orders.bookid=Book.bookid
+ORDER BY Customer.name ASC;

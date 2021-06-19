@@ -1,0 +1,12 @@
+SELECT count(*) AS 도서총개수 FROM book;
+SELECT count(DISTINCT publisher) AS 출판사수 FROM book;
+SELECT name, address FROM customer;
+-- SELECT * FROM orders where orderdate BETWEEN TO_DATE('14/07/04', 'YY/MM/DD') AND TO_DATE('14/07/07', 'YY/MM/DD');
+
+SELECT orderid, orderdate FROM orders where orderdate BETWEEN '14/07/04' AND '14/07/07';
+SELECT orderid, orderdate FROM orders where orderdate NOT BETWEEN '14/07/04' AND '14/07/07';
+SELECT orderid, orderdate FROM orders where orderdate BETWEEN TO_DATE('14/07/04','YY/MM/DD') AND TO_DATE('14/07/07','YY/MM/DD');
+SELECT orderid, orderdate FROM orders where orderdate NOT BETWEEN TO_DATE('14/07/04','YY/MM/DD') AND TO_DATE('14/07/07','YY/MM/DD');
+
+SELECT name, address FROM customer where name like '김%';
+SELECT name, address FROM customer where name like '김%아';
